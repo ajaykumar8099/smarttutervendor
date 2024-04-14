@@ -1,0 +1,59 @@
+/* Base styles */
+.single-project-head {
+    color: rgb(15, 2, 70);
+    font-family: "Roboto", sans-serif;
+    font-size: 27px !important;
+    font-weight: 800  !important;
+  }
+  
+  .single-project-description {
+    font-family: "Roboto", sans-serif;
+    font-size: 22px !important;
+    margin-top: 10px ;
+    color: rgb(97, 99, 95);
+  }
+  
+  .single-project-price {
+    font-family: "Roboto", sans-serif;
+    font-size: 24px !important;
+    font-weight: bold !important;
+    color: #18a518;
+    margin-top: 10px !important;
+  }
+  
+  .single-project-technologies {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px !important;
+    margin-top: 10px !important;
+    color: rgb(97, 99, 95);
+  }
+  .img{
+    width: 100%;
+  }
+
+  .video-height{
+    width: 100% !important;
+    height: 200px !important;
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .single-project-head {
+      font-size: 20px;
+    }
+  
+    .single-project-description {
+      font-size: 18px;
+    }
+  
+    .single-project-price {
+      font-size: 16px;
+    }
+  
+    .single-project-technologies {
+      font-size: 12px;
+    }
+  }
+  
+  /* Add more media queries as needed */
+  

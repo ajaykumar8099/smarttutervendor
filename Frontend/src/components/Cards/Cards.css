@@ -1,0 +1,29 @@
+.Cards {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  overflow: scroll;
+  /* border: 1px solid pink; */
+  gap: 10px;
+  height: 70vh;
+}
+.parentContainer{
+  width: 100%;
+  /* border: 1px solid rgb(255, 4, 46); */
+
+}
+
+@media screen and (max-width: 1200px) {
+  .Cards{
+    flex-direction: column;
+  }
+  .parentContainer{
+    height: 9rem;
+  }
+}
+
+@media screen and (max-width: 768px)
+{
+  .Cards{
+    width: 90%;
+  }
+}

@@ -1,0 +1,14 @@
+.create-course-heading {
+    font-family: "Roboto", sans-serif; /* Specify a fallback sans-serif font */
+    color: rgb(2, 2, 19); /* Dark color for better readability */
+    font-size: 32px; /* Larger font size for emphasis */
+    font-weight: 700; /* Bold font weight */
+    text-transform: uppercase; /* Convert text to uppercase */
+    letter-spacing: 2px; /* Increase letter spacing for emphasis */
+    margin-bottom: 30px; /* Add more bottom margin for separation */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Add a subtle but prominent text shadow */
+    text-align: center; /* Center-align the text */
+    border-bottom: 3px solid #dddddd; /* Add a bottom border for visual appeal */
+    padding-bottom: 10px; /* Add padding at the bottom for spacing */
+}
+

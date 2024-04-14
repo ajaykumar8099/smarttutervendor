@@ -1,0 +1,20 @@
+.navbar-dashboard {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Ensure this property is applied */
+    align-items: center; /* Center items vertically */
+    padding: 10px;
+    background-color:#ffffff;
+    flex-wrap: nowrap; /* Prevent child elements from wrapping */
+  }
+  .navbar-dashboard-head{
+    margin-right: 45%;
+  }
+  
+  @media screen and (min-width:1000px) {
+    .navbar-dashboard-head{
+        margin-right: 80%;
+    }
+  }
+
+  

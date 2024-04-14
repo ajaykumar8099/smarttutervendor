@@ -1,0 +1,260 @@
+:root {
+  --yellow: linear-gradient(180deg, #F8D49A -146.42%, #FAD79D -46.42%);
+  --orange: #fca61f;
+  --black: #242d49;
+  --gray: #788097;
+  --purple: linear-gradient(180deg, #BB67FF 0%, #C484F3 100%);
+  --pink: #FF919D;
+  --glass: rgba(255, 255, 255, 0.54);
+  --boxShadow: 0px 19px 60px rgb(0 0 0 / 8%);
+  --smboxShadow: -79px 51px 60px rgba(0, 0, 0, 0.08);
+  --activeItem: #f799a354;
+}
+
+.App {
+  /* padding: 0.5rem 3.5rem; */
+  color: var(--black);
+  /* background: linear-gradient(
+    106.37deg,
+    #ffe1bc 29.63%,
+    #ffcfd1 51.55%,
+    #f3c6f1 90.85%
+  ); */
+  height: 100vh;
+  /* display: flex;
+  align-items: center; */
+  /* justify-content: center; */
+  font-family: 'Inter', sans-serif;
+  background-color: white;
+}
+
+.AppGlass {
+  /* display: grid;
+  height: 100%;
+  width: 100%;
+  background: var(--glass);
+  /* border-radius: 2rem; */
+  /* gap: 16px;
+  grid-template-columns: 11rem auto 20rem; */ 
+  height: 100%;
+  width: 100%;
+  display:flex;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .AppGlass{
+    grid-template-columns: 10% 50% auto;
+    overflow-y: scroll;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .AppGlass{
+    grid-template-columns: 1fr;
+  } 
+}
+
+
+.navlink ,a{
+  text-decoration: none;
+}
+/*=====================================
+Login Styles
+======================================*/
+.main_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: transparent;
+}
+
+.login-container {
+  width: 20vw;
+  background-color: transparent;
+  border-radius: 1vw;
+  padding: 3vw;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 20vh;
+  border-radius: 10px;
+ 
+}
+
+@media screen and (max-width: 768px) {
+  .login-container {
+    width: 65vw;
+    background-color: transparent;
+    border-radius: 1vw;
+    padding: 3vw;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30vh;
+    border-radius: 10px;
+  }
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333333;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group{
+  width: 90%;
+}
+
+.input-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #666666;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.login-container button {
+  width: 100%;
+  padding: 10px;
+  background-color:rgb(247, 84, 179);
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.login-container button:hover {
+  background-color: #b3009b57;
+}
+/*==========================
+=======Main Table =====
+==========================*/
+.loading-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5); /* Transparent white background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999; /* Ensure the loading overlay appears on top of other content */
+}
+/* Tag Css */
+/* styles.css */
+
+/* Style for the input field */
+.ReactTags__tagInput {
+  width: 97%; /* Adjust width as needed */
+  padding: 8px;
+  border: 1px solid #106dca; /* Border color */
+  border-radius: 4px;
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+/* Style for the tag container */
+.ReactTags__tags {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 4px;
+}
+
+/* Style for each tag */
+.ReactTags__tag {
+  background-color: #007bff; /* Tag background color */
+  color: #fff; /* Tag text color */
+  border-radius: 4px;
+  padding: 4px 8px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  font-size: 14px; /* Adjust font size as needed */
+}
+
+/* Style for the 'x' button to remove tags */
+.ReactTags__remove {
+  cursor: pointer;
+  margin-left: 4px;
+}
+
+/*==========================
+=======SinglePost Table =====
+==========================*/
+.single-post-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.single-post-card {
+  display: grid;
+  grid-template-columns: repeat(1,1fr);
+ 
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.single-post-card h3 {
+  margin-bottom: 10px;
+}
+
+.single-post-card h5 {
+  margin-bottom: 10px;
+}
+
+.single-post-media {
+  margin-bottom: 10px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 5px;
+  /* height: 20vh; */
+
+}
+
+.single-post-media img,
+.single-post-media video {
+  height: 20vh;
+  max-width:  100%;
+}
+
+.single-post-link {
+  /* display: block; */
+  margin-bottom: 10px;
+  display: inline-block; /* Make the links block elements */
+  background-color: #2e2774; /* Set background color */
+  color: #ffffff !important; /* Set text color */
+  padding: 10px 15px; /* Add padding */
+  margin: 10px !important; /* Add margin */
+  text-decoration: none !important; /* Remove underline */
+  border-radius: 5px; 
+  
+}
+
+@media screen and (min-width:768px) {
+  .large-devices{
+    display: block;
+  }
+  .small-devices{
+    display: none;
+  }
+}
+
+@media screen and (max-width:767px){
+  .large-devices{
+    display: none;
+  }
+  .small-devices{
+    display: block;
+  }
+}
